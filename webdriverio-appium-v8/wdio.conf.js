@@ -23,7 +23,7 @@ exports.config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/**/*.js'
+        './test/specs/**/ios*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -51,13 +51,21 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
+    capabilities: //[{
         // capabilities for local Appium web tests on an Android Emulator
-        'appium:platformName': 'Android',
-        'appium:deviceName': 'Pixel 5',
-        'appium:platformVersion': '12.0',
-        'appium:automationName': 'UiAutomator2',
-        'appium:app': './app/android/ApiDemos-debug.apk'
+        //'appium:platformName': 'Android',
+        //'appium:deviceName': 'Pixel 5',
+        //'appium:platformVersion': '12.0',
+        //'appium:automationName': 'UiAutomator2',
+        //'appium:app': './app/android/ApiDemos-debug.apk'
+    //}],
+    [{
+        // capabilities for local Appium web tests on an iOS Simulator
+        'appium:platformName': 'iOS',
+        'appium:deviceName': 'iPhone 15',
+        'appium:platformVersion': '17.2',
+        'appium:automationName': 'XCUITest',
+        'appium:app': './app/ios/UIKitCatalog.app.zip'
     }],
 
     //

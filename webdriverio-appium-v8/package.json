@@ -8,6 +8,7 @@
     "@wdio/spec-reporter": "^8.27.2",
     "appium": "^2.4.1",
     "appium-uiautomator2-driver": "^2.41.0",
+    "appium-xcuitest-driver": "^5.14.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
