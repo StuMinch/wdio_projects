@@ -63,8 +63,10 @@ exports.config = {
         // capabilities for local Appium web tests on an iOS Simulator
         browserName: 'Safari',
         'appium:platformName': 'iOS',
-        'appium:deviceName': 'iPhone 15 Pro',
-        'appium:platformVersion': '17.5',
+        "appium:xcodeOrgId": "Stuart Minchington",
+        "appium:xcodeSigningId": "iPhone Developer",
+        'appium:udid': '00008130-000230D41A62001C',
+        //'appium:platformVersion': '17.5',
         'appium:automationName': 'XCUITest'
         //'appium:app': './app/ios/UIKitCatalog.app.zip'
     }],
